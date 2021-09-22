@@ -25,7 +25,11 @@ html, body {
 header {
     background-color: var(--blue);
     padding: 20px;
-    color: var(--white)
+    color: var(--white);
+}
+
+.fill{
+    color:var(--red);
 }
 
 main {
@@ -47,12 +51,9 @@ textarea {
     resize: none;
 }
 
-.key-input {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
+.key-input,.chars {
     display: grid;
-    grid-template-columns: repeat(10, 2.5em);
+    grid-template-columns: repeat(10, 4em);
     grid-auto-rows: min-content;
     gap: 1em;
 }
